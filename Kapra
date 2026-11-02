@@ -1,0 +1,1583 @@
+
+local v_ = Enum
+local v_2 = workspace
+local v_3 = getconnections
+local v_4 = CFrame
+local v_5 = RaycastParams
+local humanoidStateType = isfile
+local v_6 = TweenInfo
+humanoidStateType = setclipboard
+humanoidStateType = settings
+local v_7 = Rect
+humanoidStateType = firetouchinterest
+humanoidStateType = UserSettings
+local v_8 = require
+local v_9 = tick
+humanoidStateType = activatable
+humanoidStateType = tool
+local v_10 = task
+humanoidStateType = handleMondoChick
+humanoidStateType = http_request
+humanoidStateType = ni
+humanoidStateType = isfolder
+humanoidStateType = desc
+humanoidStateType = readfile
+local v_11 = game
+humanoidStateType = color
+local v_12 = Instance
+local v_13 = getthreadidentity
+humanoidStateType = fireclickdetector
+local v_14 = _G
+humanoidStateType = nearestnew
+local v_15 = newcclosure
+local v_16 = UDim2
+humanoidStateType = Field
+local v_17 = UDim
+local v_18 = identifyexecutor
+humanoidStateType = polarbear
+humanoidStateType = makefolder
+local v_19 = os
+local v_20 = setthreadidentity
+local v_21 = Vector3
+humanoidStateType = hookfunction
+humanoidStateType = delfile
+humanoidStateType = writefile
+humanoidStateType = nearestoverlap
+local v_22 = print
+local v_23 = Color3
+local v_24 = Vector2
+humanoidStateType = v
+humanoidStateType = firesignal
+humanoidStateType = listfiles
+local wait = v_10 and v_10.wait
+local new = v_21 and v_21.new
+
+if v_ then
+    humanoidStateType = v_.HumanoidStateType
+end
+
+local spawn = v_10 and v_10.spawn
+local cancel = v_10 and v_10.cancel
+local new2 = v_12 and v_12.new
+local new3 = v_24 and v_24.new
+
+if v_ then
+    humanoidStateType = v_.UserInputType
+end
+
+if v_16 then
+    humanoidStateType = v_16.new
+end
+
+if v_23 then
+    humanoidStateType = v_23.fromRGB
+end
+
+if v_ then
+    humanoidStateType = v_.ScreenInsets
+end
+
+if v_17 then
+    humanoidStateType = v_17.new
+end
+
+if v_ then
+    humanoidStateType = v_.Font
+end
+
+if v_ then
+    humanoidStateType = v_.TextXAlignment
+end
+
+if v_ then
+    humanoidStateType = v_.SortOrder
+end
+
+if v_23 then
+    humanoidStateType = v_23.new
+end
+
+if v_ then
+    humanoidStateType = v_.ScrollingDirection
+end
+
+if v_ then
+    humanoidStateType = v_.AutomaticSize
+end
+
+if v_ then
+    humanoidStateType = v_.ElasticBehavior
+end
+
+if v_6 then
+    humanoidStateType = v_6.new
+end
+
+if v_ then
+    humanoidStateType = v_.EasingStyle
+end
+
+if v_ then
+    humanoidStateType = v_.EasingDirection
+end
+
+if v_19 then
+    humanoidStateType = v_19.date
+end
+
+if v_ then
+    humanoidStateType = v_.ScrollBarInset
+end
+
+if v_ then
+    humanoidStateType = v_.TextYAlignment
+end
+
+if v_ then
+    humanoidStateType = v_.ScaleType
+end
+
+if v_7 then
+    humanoidStateType = v_7.new
+end
+
+if v_5 then
+    humanoidStateType = v_5.new
+end
+
+if v_ then
+    humanoidStateType = v_.RaycastFilterType
+end
+
+if v_4 then
+    humanoidStateType = v_4.new
+end
+
+if v_10 then
+    humanoidStateType = v_10.delay
+end
+
+if v_19 then
+    humanoidStateType = v_19.time
+end
+
+if v_ then
+    humanoidStateType = v_.KeyCode
+end
+
+if v_4 then
+    humanoidStateType = v_4.Angles
+end
+
+if v_ then
+    humanoidStateType = v_.Material
+end
+
+if v_ then
+    humanoidStateType = v_.PositionAlignmentMode
+end
+
+if v_ then
+    humanoidStateType = v_.OrientationAlignmentMode
+end
+
+if v_ then
+    humanoidStateType = v_.PathStatus
+end
+
+if v_ then
+    humanoidStateType = v_.PathWaypointAction
+end
+
+if v_4 then
+    humanoidStateType = v_4.fromMatrix
+end
+
+if v_4 then
+    humanoidStateType = v_4.lookAt
+end
+
+while v_11:IsLoaded() == false or v_2:FindFirstChild("ServerVersion") == nil do
+    wait()
+end
+
+if v_2.ServerVersion.Value == 570 then
+    while v_11:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("ScreenGui") == nil or v_11:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.LoadingMessage.Visible == true do
+        wait()
+    end
+else
+    while v_11:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("LoadingScreenGui") == nil or v_11:GetService("Players").LocalPlayer.PlayerGui.LoadingScreenGui.LoadingMessage.Visible == true do
+        wait()
+    end
+end
+
+v_11:GetService("VirtualInputManager")
+local PathfindingService = v_11:GetService("PathfindingService")
+local ReplicatedStorage = v_11:GetService("ReplicatedStorage")
+local UserInputService = v_11:GetService("UserInputService")
+v_11:GetService("TeleportService")
+local localPlayer = v_11:GetService("Players").LocalPlayer
+v_11:GetService("TweenService")
+v_11:GetService("HttpService")
+v_11:GetService("VirtualUser")
+local RunService = v_11:GetService("RunService")
+v_11:GetService("Lighting")
+
+local tbl = {
+    ["3049989742"] = true,
+    ["2011594783"] = true,
+    ["5643986803"] = true,
+    ["4875308344"] = true,
+    ["829528265"] = true,
+    ["795072652"] = true,
+    ["864245956"] = true,
+    ["868450011"] = true,
+    ["7885903578"] = true,
+    ["1514703948"] = true,
+    ["1372471304"] = true,
+    ["9323006085"] = false,
+    ["4236684798"] = false,
+    ["3170736063"] = false,
+    ["6139334907"] = false,
+    ["8990334419"] = false,
+    ["5061301137"] = false,
+    ["1594706926"] = false,
+}
+
+local function fn(arg, arg2)
+    local flag = arg == "script.lua"
+
+    if arg ~= "script.lua" and arg ~= "hivehub.lua" then
+        if arg2 == true then
+            local str = v_14.serverurl ~= nil and v_14.serverurl .. "/" .. arg or "http://132.145.165.2/" .. arg
+            return str
+        end
+        local str = v_14.weburl ~= nil and v_14.weburl .. "/" .. arg or "https://chris12089.github.io/atlas/" .. arg
+        return str
+    end
+
+    local str = v_14.githuburl ~= nil and v_14.githuburl .. "/" .. arg or "https://raw.githubusercontent.com/Chris12089/atlasbss/main/" .. arg
+    return str
+end
+
+if v_11.PlaceId == 15579077077 then
+    return loadstring(v_11:HttpGet(fn("hivehub.lua")))()
+end
+
+if v_11.PlaceId ~= 1537690962 and v_11.PlaceId ~= 4079902982 and v_11.PlaceId ~= 3719762683 and v_11.PlaceId ~= 137594107439804 then
+    return v_11:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Warning",
+        Text = "You're not in Bee Swarm Simulator.",
+        Duration = 5,
+    })
+end
+
+if tbl[tostring(localPlayer.UserId)] == nil then
+    if v_18 ~= nil then
+        v_22(v_18())
+    end
+
+    local tbl2 = {}
+
+    tbl2.vars = {
+        walkspeedenabled = false,
+        walkspeed = 45,
+        walkdynamic = false,
+        walkspeed2 = 1.5,
+        sprinkler = "Basic Sprinkler",
+        movement = "Walk",
+        tweenspeed = 6,
+        jumpshortcuts = false,
+        cannon = false,
+        remote = false,
+        digmethod = "Autoclick",
+    }
+
+    tbl2.autofarm = {
+        enabled = false,
+        autosprinkler = false,
+        autodig = false,
+        fieldinterval = 10,
+        field1 = "Dandelion Field",
+        field2 = "None",
+        field3 = "None",
+        patternenabled = false,
+        patternblacklist = false,
+        patternstart = "Center",
+        sprinklerpos = "Center",
+        pattern = "CornerXSnake",
+        autopopstar = true,
+        autogummystar = true,
+        autoscorchingstar = true,
+        scorchingscore = 0,
+        autoguidingstar = false,
+        guidingfieldblacklist = false,
+        smileytime = 4,
+        farmcombococonuts = true,
+        combofield = false,
+        comboamount = 0,
+        farmbubbles = false,
+        farmcoconuts = true,
+        farmdupedtokens = true,
+        farmfireflies = false,
+        farmfires = false,
+        farmfuzzbombs = false,
+        farmleaves = false,
+        farmmarks = false,
+        farmmeteorshowers = false,
+        farmprecise = true,
+        farmprecisemark = true,
+        farmpuppyball = true,
+        farmshowers = true,
+        farmtriangulate = false,
+        farmclouds = true,
+        farmballoons2 = false,
+        ignorehoneytokens = false,
+        farmposenabled = false,
+        farmposition = false,
+        prioritytokens = false,
+        dupedtokens = false,
+        farmbadges = false,
+        badgesclaim = false,
+        badgep = "Lowest Pollen Needed",
+        badgebl = false,
+    }
+
+    tbl2.autoquest = {
+        enabled = false,
+        claim2 = false,
+        bestbluefield = false,
+        bestredfield = false,
+        bestwhitefield = false,
+        goomethod = "Gumdrops",
+        xmas = false,
+        pollen = true,
+        goo = true,
+        mobs = true,
+        ants = false,
+        ragetokens = true,
+        puffshrooms = true,
+        dupedtokens = false,
+        windshrine = false,
+        memorymatch = true,
+        sharebeans = false,
+        craft = false,
+        toys = true,
+        planters = false,
+        allowedplanters = false,
+        feedbees = false,
+        levelbees = false,
+        treats = false,
+        rj = false,
+        rjbl = false,
+        beebear = false,
+        gummybear = false,
+        stickbug = false,
+        blackbear = false,
+        motherbear = false,
+        pandabear = false,
+        sciencebear = false,
+        dapperbear = false,
+        onett = false,
+        spiritbear = false,
+        blackbear2 = false,
+        brownbear = false,
+        buckobee = false,
+        rileybee = false,
+        honeybee = false,
+        polarbear = false,
+    }
+
+    tbl2.antilag = {
+        tokens = false,
+        particles = false,
+        stations = false,
+        precise = false,
+        bees = false,
+        flowers = false,
+        balloons = false,
+        textures = false,
+        decorations = false,
+        norender = false,
+        players = false,
+        bssui = false,
+        main = false,
+    }
+
+    tbl2.ant = {
+        enabled = false,
+        antpass = false,
+        amulet = false,
+        keep = false,
+        boosts = false,
+        values = false,
+    }
+
+    tbl2.beesmas = {
+        beesmasfeast = false,
+        candles = false,
+        gingerbreadhouse = false,
+        onettlidart = false,
+        samovar = false,
+        stockings = false,
+        snowmachine = false,
+        wintermm = false,
+        honeymaskforwreath = false,
+        snowbear = false,
+        roboparty = false,
+        partyspawn = false,
+        partymobsbl2 = false,
+        coolbreeze = false,
+        snowflake = false,
+        snowflakeAt = 95,
+    }
+
+    tbl2.boosters = {
+        enabled2 = false,
+        allowed = false,
+        fieldsblacklist = false,
+        required = false,
+        wanted = 1,
+        min = 1,
+    }
+
+    tbl2.convert = {
+        convertHoney = true,
+        convertHoneyAt = 100,
+        convertHiveBalloon = false,
+        convertHiveBalloonAt = 30,
+        waitBeforeConverting = false,
+        timeToWait = 15,
+        standInPrecise = true,
+        standInPreciseAt = 75,
+        coconut = false,
+        coconutAt = 85,
+        autoHoneyMask = false,
+        defaultMask = "Diamond Mask",
+        instantToggle = false,
+        instantType = false,
+        festivegift = false,
+        convertField = false,
+        resetWhenConverting = false,
+        alwaysConvertBalloon = false,
+        convert6xBubbleBloat = false,
+        useEnzymesBalloon = false,
+    }
+
+    tbl2.combat = {
+        avoidmobs = true,
+        killAphid = true,
+        killmondochick = false,
+        lootmondo = false,
+        mondochicktime = 15,
+        mondoprep = false,
+        mondopreptime = 20,
+        killvicious = false,
+        giftedvicious = false,
+        viciousmax = 12,
+        viciousmin = 1,
+        killwindy = false,
+        windymax = 25,
+        windymin = 1,
+        donatevials = false,
+        killLadybug = false,
+        killRhinoBeetle = false,
+        killSpider = false,
+        killMantis = false,
+        killScorpion = false,
+        killWerewolf = false,
+        killcrab = false,
+        crabmethod = "Walk",
+        craboil = false,
+        killcommando = false,
+        commandomethod = "Walk",
+        commandoshell = true,
+        commandohelp = false,
+        demonmask = false,
+        dmwhitelist = false,
+        stingers = false,
+        wlstingers = false,
+        starsaw = false,
+        wlstarsaw = false,
+        babylove = false,
+        killtunnelbear = false,
+        killkingbeetle = false,
+        amulet = false,
+        keep = false,
+        boosts = false,
+        values = false,
+    }
+
+    tbl2.detected = {
+        fastshowertween = false,
+        fastcoconuttween = false,
+        fastraretween = false,
+        rares = false,
+    }
+
+    tbl2.dispensers = {
+        blueberry = false,
+        honey = false,
+        strawberry = false,
+        treat = false,
+        coconut = false,
+        antpass = false,
+        robopass = false,
+        royaljelly = false,
+        glue = false,
+    }
+
+    tbl2.face = {
+        balloons = false,
+        gballoons = false,
+        bubbles = false,
+        gbubbles = false,
+        fires = false,
+        center = false,
+        shiftlock = false,
+        sldirection = "South",
+        method = "Shift Lock",
+    }
+
+    tbl2.hive = {
+        bee = false,
+        giftedbasic = false,
+        mutations = false,
+        mutas2 = false,
+        feedtype = "Bitterberry",
+        neonberry = false,
+        beetypes = false,
+        amount = 50,
+        rj = false,
+        stoprjgifted = false,
+        rjbeetypes = false,
+        rjrarity = false,
+    }
+
+    tbl2.materials = {
+        enabled2 = false,
+        enabled = false,
+        interval = false,
+        intervaltime = false,
+        popstar = false,
+        scorchingstar = false,
+        gummystar = false,
+        starsaw = false,
+    }
+
+    tbl2.memorymatch = {
+        blacklist = false,
+        basic = false,
+        mega = false,
+        night = false,
+        extreme = false,
+        ghost = false,
+        ghost2 = false,
+        ghost4 = false,
+    }
+
+    tbl2.misc = {
+        autorejoin2 = false,
+        serverhop = false,
+        serverhopinterval = 30,
+        anonymous = false,
+        mobiletoggle = false,
+        console = false,
+        custompatterns = false,
+        farmmultiplefields = false,
+        follow = false,
+        followfieldblacklist = false,
+        bqbuy = false,
+        bqbuyconf = false,
+        dapperslots = 5,
+        bqdel2 = false,
+        bqdelconf = false,
+        autossa2 = false,
+        rolldouble = false,
+        passive = "Pop Star",
+        passives2 = false,
+        boosts = false,
+        automoon = false,
+        mboosts = false,
+        mvalues = false,
+    }
+
+    tbl2.planters = {
+        enabled = false,
+        method = "Manual",
+        manual = {
+            farmfield = false,
+            planter1 = {
+                harvest = false,
+                plant = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 4,
+                ignoresmoking = false,
+                planter = "Plastic Planter",
+                field1 = "Dandelion Field",
+                field2 = "None",
+                field3 = "None",
+                field4 = "None",
+                lastfield = false,
+            },
+            planter2 = {
+                harvest = false,
+                plant = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 4,
+                ignoresmoking = false,
+                planter = "Plastic Planter",
+                field1 = "Dandelion Field",
+                field2 = "None",
+                field3 = "None",
+                field4 = "None",
+                lastfield = false,
+            },
+            planter3 = {
+                harvest = false,
+                plant = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 4,
+                ignoresmoking = false,
+                planter = "Plastic Planter",
+                field1 = "Dandelion Field",
+                field2 = "None",
+                field3 = "None",
+                field4 = "None",
+                lastfield = false,
+            },
+        },
+        nectar = {
+            preset = "Custom",
+            allowedplanters = false,
+            blacklistedfields = false,
+            ignorefielddeg = true,
+            ignoresmoking = false,
+            farmfield = false,
+            harvestatpercentage = false,
+            harvestat = 100,
+            harvestaftertime = true,
+            timetoharvest = 2,
+            comforting = false,
+            motivating = false,
+            satisfying = false,
+            refreshing = false,
+            invigorating = false,
+            comfortingp = 1,
+            motivatingp = 2,
+            satisfyingp = 3,
+            refreshingp = 4,
+            invigoratingp = 5,
+            comfortingmin2 = 16,
+            motivatingmin2 = 16,
+            satisfyingmin2 = 16,
+            refreshingmin2 = 16,
+            invigoratingmin2 = 16,
+            comfortinglastfield = "",
+            motivatinglastfield = "",
+            satisfyinglastfield = "",
+            refreshinglastfield = "",
+            invigoratinglastfield = "",
+        },
+        cycles = {
+            lastcycle = false,
+            started = false,
+            cycle1 = {
+                planter1 = {planter = "None", field = "Dandelion Field"},
+                planter2 = {planter = "None", field = "Dandelion Field"},
+                planter3 = {planter = "None", field = "Dandelion Field"},
+                ignoresmoking = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 2,
+            },
+            cycle2 = {
+                planter1 = {planter = "None", field = "Dandelion Field"},
+                planter2 = {planter = "None", field = "Dandelion Field"},
+                planter3 = {planter = "None", field = "Dandelion Field"},
+                ignoresmoking = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 2,
+            },
+            cycle3 = {
+                planter1 = {planter = "None", field = "Dandelion Field"},
+                planter2 = {planter = "None", field = "Dandelion Field"},
+                planter3 = {planter = "None", field = "Dandelion Field"},
+                ignoresmoking = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 2,
+            },
+            cycle4 = {
+                planter1 = {planter = "None", field = "Dandelion Field"},
+                planter2 = {planter = "None", field = "Dandelion Field"},
+                planter3 = {planter = "None", field = "Dandelion Field"},
+                ignoresmoking = false,
+                harvestatpercentage = true,
+                harvestat = 100,
+                harvestaftertime = false,
+                timetoharvest = 2,
+            },
+        },
+        rewards = {
+            enabled = false,
+            smoothie = false,
+            swirledwax = false,
+            swirledwaxp = false,
+            causticwax = false,
+            causticwaxp = false,
+        },
+    }
+
+    tbl2.puffshrooms = {
+        enabled = false,
+        blacklistedfields = false,
+        highlvlpriority = false,
+        priorityfields = false,
+        rarity = "Common",
+        maintain = false,
+        mintime = 30,
+        min = 1,
+        max = 15,
+    }
+
+    tbl2.rbc = {
+        enabled = false,
+        preset = "Blue",
+        buydrives = false,
+        usedrives = false,
+        goldcogmowers = true,
+        precise = false,
+        precisemin = 5,
+        cogupgrades = true,
+        upgradesenabled = false,
+        rerollupgrades = false,
+        rerollbees = false,
+        upgrades = false,
+        materialsenabled = false,
+        materials = false,
+        stoproundend = false,
+        disableroundend = false,
+        maxround = 15,
+        bestbluefield = false,
+        bestredfield = false,
+        bestwhitefield = false,
+        goomethod = "Gumdrops",
+        highestcog = false,
+        highestcogmax = 10,
+        cogconvert = true,
+        amulet = true,
+        keep = true,
+        boosts = false,
+        values = false,
+        rerollquests = false,
+        rerollmin = 10,
+        buypass = false,
+        passcooldown = 0,
+        mask = false,
+        bluemask = "Diamond Mask",
+        redmask = "Demon Mask",
+        whitemask = "Gummy Mask",
+        tool = false,
+        bluetool = "Tide Popper",
+        redtool = "Dark Scythe",
+        whitetool = "Gummyballer",
+    }
+
+    tbl2.sprouts = {
+        enabled = false,
+        plant = false,
+        plantday = false,
+        plantnight = false,
+        fieldsblacklist = false,
+        rarity3 = false,
+    }
+
+    tbl2.stickbug = {
+        enabled = false,
+        circle = true,
+        totem = true,
+        loot = false,
+        spawn = false,
+        tickets = false,
+        amulet = false,
+        keep = false,
+        boosts = false,
+        values = false,
+    }
+
+    tbl2.snail = {
+        enabled = false,
+        amulet = false,
+        keep = false,
+        boosts = false,
+        values = false,
+    }
+
+    tbl2.toys = {
+        enabled = false,
+        interrupt = true,
+        intwhitelist = false,
+        conversions = 2,
+        prog = false,
+        progblender = true,
+        route = false,
+        hiddenstickers = false,
+        meteor = false,
+        honeystorm = false,
+        wealthclock = false,
+        sproutsummoner = false,
+        windshrine = false,
+        shrineitem = "",
+        shrineamount = 1,
+        farmwinds = false,
+        windsblacklist = false,
+        stickerstacker = false,
+        stackmethod = "Tickets",
+        stackselect = false,
+        discardstickers = false,
+        discardselect = false,
+        stickerprinter = false,
+        printereggs = false,
+        nectarcondenser = false,
+        nectars = false,
+    }
+
+    tbl2.webhook = {
+        enabled = false,
+        url = "",
+        interval = 5,
+        nectars = true,
+        planters = true,
+        balloon = false,
+        drives = false,
+        dappershop = false,
+        items = false,
+        console = false,
+        stickers = false,
+        beequips = false,
+        questdone2 = false,
+        disconnect = false,
+        disconnectid = "",
+        graph = false,
+        graphurl = "",
+        hidebranding = false,
+    }
+
+    local tbl3 = {}
+    tbl3.rares = {}
+    tbl3.bluefields = {}
+    tbl3.redfields = {}
+    tbl3.whitefields = {}
+    tbl3.conversions = 0
+    tbl3.honeyatstart = localPlayer.CoreStats.Honey.Value
+    local beesmas = v_2.Toys:FindFirstChild("Beesmas Tree") ~= nil
+    tbl3.beesmas = beesmas
+    tbl3.start = v_9()
+    local tbl4 = {}
+    tbl4.Username = localPlayer.Name
+    local v_25 = nil
+    local tbl5 = {}
+    local tbl6 = {}
+    PathfindingService:CreatePath({AgentRadius = 4, WaypointSpacing = 15})
+
+    for i, child in ipairs(v_2.MonsterSpawners:GetChildren()) do
+        tbl5[child.Name] = {
+            MonsterType = child.MonsterType.Value,
+            Position = child.Position,
+            Name = child.Name,
+        }
+
+        if child:FindFirstChild("Attachment") == nil then
+            tbl5[child.Name].timer = child.TimerAttachment.TimerGui.TimerLabel
+        else
+            tbl5[child.Name].timer = child.Attachment.TimerGui.TimerLabel
+        end
+    end
+
+    local tbl7 = {
+        ActivateButton = localPlayer.PlayerGui.ScreenGui.ActivateButton,
+        MinigameLayer = localPlayer.PlayerGui.ScreenGui.MinigameLayer,
+        Dialog = localPlayer.PlayerGui.ScreenGui.NPC,
+    }
+
+    humanoidStateType = {
+        ["Paper Planter"] = 1,
+        ["Ticket Planter"] = 2,
+        ["Sticker Planter"] = 3,
+        ["Festive Planter"] = 4,
+        ["Plastic Planter"] = 2,
+        ["Candy Planter"] = 4,
+        ["Red Clay Planter"] = 6,
+        ["Blue Clay Planter"] = 6,
+        ["Tacky Planter"] = 8,
+        ["Pesticide Planter"] = 10,
+        ["Hydroponic Planter"] = 12,
+        ["Heat-Treated Planter"] = 12,
+        ["Petal Planter"] = 14,
+        ["The Planter Of Plenty"] = 16,
+        comforting = {"Pine Tree Forest", "Bamboo Field", "Dandelion Field"},
+        invigorating = {
+            "Pepper Patch",
+            "Mountain Top Field",
+            "Cactus Field",
+            "Clover Field",
+        },
+        refreshing = {"Coconut Field", "Strawberry Field", "Blue Flower Field"},
+        satisfying = {"Pumpkin Patch", "Pineapple Patch", "Sunflower Field"},
+        motivating = {
+            "Rose Field",
+            "Spider Field",
+            "Stump Field",
+            "Mushroom Field",
+        },
+        timers = {},
+        planters = {
+            ["Plastic Planter"] = {
+                GrowthFields = {},
+                NectarTypes = {
+                    satisfying = 1,
+                    comforting = 1,
+                    invigorating = 1,
+                    refreshing = 1,
+                    motivating = 1,
+                },
+            },
+            ["Ticket Planter"] = {
+                GrowthFields = {},
+                NectarTypes = {
+                    satisfying = 2,
+                    comforting = 2,
+                    invigorating = 2,
+                    refreshing = 2,
+                    motivating = 2,
+                },
+            },
+            ["Sticker Planter"] = {
+                GrowthFields = {},
+                NectarTypes = {
+                    satisfying = 2,
+                    comforting = 2,
+                    invigorating = 2,
+                    refreshing = 2,
+                    motivating = 2,
+                },
+            },
+            ["Festive Planter"] = {
+                GrowthFields = {},
+                NectarTypes = {
+                    satisfying = 3,
+                    comforting = 3,
+                    invigorating = 3,
+                    refreshing = 3,
+                    motivating = 3,
+                },
+            },
+            ["Candy Planter"] = {
+                GrowthFields = {
+                    ["Coconut Field"] = 1.25,
+                    ["Strawberry Field"] = 1.25,
+                    ["Pineapple Patch"] = 1.25,
+                },
+                NectarTypes = {motivating = 1.2},
+            },
+            ["Red Clay Planter"] = {
+                GrowthFields = {
+                    ["Pepper Patch"] = 1.25,
+                    ["Rose Field"] = 1.25,
+                    ["Strawberry Field"] = 1.25,
+                    ["Mushroom Field"] = 1.25,
+                },
+                NectarTypes = {invigorating = 1.2, satisfying = 1.2},
+            },
+            ["Blue Clay Planter"] = {
+                GrowthFields = {
+                    ["Blue Flower Field"] = 1.25,
+                    ["Pine Tree Forest"] = 1.25,
+                    ["Stump Field"] = 1.25,
+                    ["Bamboo Field"] = 1.25,
+                },
+                NectarTypes = {refreshing = 1.2, comforting = 1.2},
+            },
+            ["Tacky Planter"] = {
+                GrowthFields = {
+                    ["Sunflower Field"] = 1.25,
+                    ["Mushroom Field"] = 1.25,
+                    ["Dandelion Field"] = 1.25,
+                    ["Clover Field"] = 1.25,
+                    ["Blue Flower Field"] = 1.25,
+                },
+                NectarTypes = {satisfying = 1.25, comforting = 1.25},
+            },
+            ["Pesticide Planter"] = {
+                GrowthFields = {
+                    ["Strawberry Field"] = 1.3,
+                    ["Spider Field"] = 1.3,
+                    ["Bamboo Field"] = 1.3,
+                },
+                NectarTypes = {motivating = 1.3, satisfying = 1.3},
+            },
+            ["Hydroponic Planter"] = {
+                GrowthFields = {
+                    ["Blue Flower Field"] = 1.5,
+                    ["Pine Tree Forest"] = 1.5,
+                    ["Stump Field"] = 1.5,
+                    ["Bamboo Field"] = 1.5,
+                },
+                NectarTypes = {refreshing = 1.4, comforting = 1.4},
+            },
+            ["Heat-Treated Planter"] = {
+                GrowthFields = {
+                    ["Pepper Patch"] = 1.5,
+                    ["Rose Field"] = 1.5,
+                    ["Strawberry Field"] = 1.5,
+                    ["Mushroom Field"] = 1.5,
+                },
+                NectarTypes = {invigorating = 1.4, motivating = 1.4},
+            },
+            ["Petal Planter"] = {
+                GrowthFields = {
+                    ["Sunflower Field"] = 1.5,
+                    ["Dandelion Field"] = 1.5,
+                    ["Spider Field"] = 1.5,
+                    ["Pineapple Patch"] = 1.5,
+                    ["Coconut Field"] = 1.5,
+                },
+                NectarTypes = {satisfying = 1.5, comforting = 1.5},
+            },
+            ["The Planter Of Plenty"] = {
+                GrowthFields = {
+                    ["Mountain Top Field"] = 1.5,
+                    ["Coconut Field"] = 1.5,
+                    ["Pepper Patch"] = 1.5,
+                    ["Stump Field"] = 1.5,
+                },
+                NectarTypes = {
+                    satisfying = 1.5,
+                    comforting = 1.5,
+                    invigorating = 1.5,
+                    refreshing = 1.5,
+                    motivating = 1.5,
+                },
+            },
+        },
+        swirled = {
+            ["Plastic Planter"] = {field = "Coconut Field", cooldown = 2628000},
+            ["Candy Planter"] = {field = "Cactus Field", cooldown = 3110400},
+            ["Red Clay Planter"] = {field = "Sunflower Field", cooldown = 2628000},
+            ["Blue Clay Planter"] = {field = "Spider Field", cooldown = 2628000},
+            ["Tacky Planter"] = {field = "Pumpkin Patch", cooldown = 2628000},
+            ["Pesticide Planter"] = {field = "Strawberry Field", cooldown = 3110400},
+            ["Heat-Treated Planter"] = {field = "Blue Flower Field", cooldown = 3110400},
+            ["Hydroponic Planter"] = {field = "Mushroom Field", cooldown = 3110400},
+            ["Petal Planter"] = {field = "Strawberry Field", cooldown = 2628000},
+        },
+        caustic = {
+            ["Plastic Planter"] = {field = "Rose Field", cooldown = 2628000},
+            ["Candy Planter"] = {field = "Mountain Top Field", cooldown = 3110400},
+            ["Red Clay Planter"] = {field = "Clover Field", cooldown = 2628000},
+            ["Blue Clay Planter"] = {field = "Clover Field", cooldown = 2628000},
+            ["Tacky Planter"] = {field = "Bamboo Field", cooldown = 2628000},
+            ["Heat-Treated Planter"] = {field = "Coconut Field", cooldown = 3110400},
+            ["Hydroponic Planter"] = {field = "Coconut Field", cooldown = 3110400},
+            ["Petal Planter"] = {field = "Dandelion Field", cooldown = 2628000},
+        },
+    }
+
+    humanoidStateType = {
+        emojis = {
+            nectars = {
+                Comforting = "<:Comforting:1281650571295719465>",
+                Motivating = "<:Motivating:1281650572386107473>",
+                Satisfying = "<:Satisfying:1281650573606781039>",
+                Refreshing = "<:Refreshing:1281650568460242985>",
+                Invigorating = "<:Invigorating:1281650569735442462>",
+            },
+            planters = {
+                ["Paper Planter"] = "<:Paper:1304867679072555012>",
+                ["Ticket Planter"] = "<:Ticket:1277726200524963996>",
+                ["Sticker Planter"] = "<:Sticker:1277726199069540353>",
+                ["Festive Planter"] = "<:Festive:1301689282469171272>",
+                ["Plastic Planter"] = "<:Plastic:1276233244626522176>",
+                ["Candy Planter"] = "<:Candy:1276233242848133203>",
+                ["Red Clay Planter"] = "<:RedClay:1276233241229131927>",
+                ["Blue Clay Planter"] = "<:BlueClay:1276233239769387090>",
+                ["Tacky Planter"] = "<:Tacky:1276233237815103518>",
+                ["Pesticide Planter"] = "<:Pesticide:1276233235676008500>",
+                ["Petal Planter"] = "<:Petal:1276233230927794216>",
+                ["Heat-Treated Planter"] = "<:HeatTreated:1276233234224517282>",
+                ["Hydroponic Planter"] = "<:Hydroponic:1276233232794255463>",
+                ["The Planter Of Plenty"] = "<:ThePlanterOfPlenty:1276233229178896386>",
+            },
+            fields = {
+                ["Bamboo Field"] = "<:Bamboo:1291117918691528704>",
+                ["Blue Flower Field"] = "<:BlueFlower:1291117953722486835>",
+                ["Cactus Field"] = "<:Cactus:1291117876631175221>",
+                ["Clover Field"] = "<:Clover:1291117828887285902>",
+                ["Coconut Field"] = "<:Coconut:1291117831596806296>",
+                ["Dandelion Field"] = "<:Dandelion:1291117956574478336>",
+                ["Mountain Top Field"] = "<:MountainTop:1291117830389108768>",
+                ["Mushroom Field"] = "<:Mushroom:1291117955387494400>",
+                ["Pepper Patch"] = "<:PepperPatch:1291117871178715318>",
+                ["Pine Tree Forest"] = "<:PineTreeForest:1291117872419962981>",
+                ["Pineapple Patch"] = "<:Pineapple:1291117915721957437>",
+                ["Pumpkin Patch"] = "<:PumpkinPatch:1291117875117031467>",
+                ["Rose Field"] = "<:Rose:1291117873724522546>",
+                ["Spider Field"] = "<:Spider:1291117919920722083>",
+                ["Strawberry Field"] = "<:Strawberry:1291117952434966580>",
+                ["Stump Field"] = "<:Stump:1291117917261266985>",
+                ["Sunflower Field"] = "<:Sunflower:1291117957660807300>",
+            },
+            drives = {
+                "<:RedDrive:1324186975573508126>",
+                "<:WhiteDrive:1324187006598905876>",
+                "<:BlueDrive:1324186900382351421>",
+                "<:GlitchedDrive:1324186946313912381>",
+            },
+            bq = {
+                ["Autumn Sunhat"] = "<:AutumnSunhat:1348657007359561768>",
+                Bandage = "<:Bandage:1348657008995471523>",
+                ["Bang Snap"] = "<:BangSnap:1348657010756816966>",
+                ["Bead Lizard"] = "<:BeadLizard:1348657012212502528>",
+                Beret = "<:Beret:1348657013613396048>",
+                ["Bottle Cap"] = "<:BottleCap:1348657048434249818>",
+                ["Camo Bandana"] = "<:CamoBandana:1348657049910906920>",
+                ["Camphor Lip Balm"] = "<:CamphorLipBalm:1348657051542224916>",
+                ["Candy Ring"] = "<:CandyRing:1348657052917960756>",
+                ["Charm Bracelet"] = "<:CharmBracelet:1348657054402875523>",
+                ["Demon Talisman"] = "<:DemonTalisman:1348657121482248282>",
+                Kazoo = "<:Kazoo:1348657122895859734>",
+                Paperclip = "<:Paperclip:1348657124795875388>",
+                ["Pink Eraser"] = "<:PinkEraser:1348657127152943195>",
+                ["Rose Headband"] = "<:RoseHeadband:1348657128839188511>",
+                ["Smiley Sticker"] = "<:SmileySticker:1348657156324593728>",
+                Sweatband = "<:Sweatband:1349055477534691420>",
+                Thimble = "<:Thimble:1348657158639583352>",
+                Thumbtack = "<:Thumbtack:1348657159835222037>",
+                Whistle = "<:Whistle:1348657161697497200>",
+            },
+        },
+        graph = {
+            honey_values = {},
+            backpack_values = {},
+            status_changes = {},
+            honey_12h = {},
+            buff_values = {
+                haste = {},
+                melody = {},
+                redboost = {},
+                blueboost = {},
+                whiteboost = {},
+                focus = {},
+                bombcombo = {},
+                balloonaura = {},
+                clock = {},
+                jbshare = {},
+                babylove = {},
+                inspire = {},
+                bear = {},
+                pollenmark = {},
+                honeymark = {},
+                festivemark = {},
+                popstar = {},
+                scorchingstar = {},
+                gummystar = {},
+                comforting = {},
+                motivating = {},
+                satisfying = {},
+                refreshing = {},
+                invigorating = {},
+                blessing = {},
+                bloat = {},
+                guiding = {},
+                mondo = {},
+                reindeerfetch = {},
+                tideblessing = {},
+            },
+        },
+        stats = {
+            ["Total Boss Kills"] = 0,
+            ["Total Bug Kills"] = 0,
+            ["Total Vicious Kills"] = 0,
+            ["Total Windy Kills"] = 0,
+            ["Total Planters"] = 0,
+            ["Total Sprouts"] = 0,
+            ["Collected Tickets"] = 0,
+            ["Quests Done"] = 0,
+            Disconnects = 0,
+        },
+    }
+
+    humanoidStateType = {time = {}}
+    humanoidStateType = {time = {}}
+
+    humanoidStateType = {
+        blender = {
+            RedExtract = true,
+            BlueExtract = true,
+            Enzymes = true,
+            Oil = true,
+            Glue = true,
+            TropicalDrink = true,
+            Gumdrops = true,
+            MoonCharm = true,
+            Glitter = true,
+            StarJelly = true,
+            PurplePotion = true,
+            SoftWax = true,
+            HardWax = true,
+            SwirledWax = true,
+            CausticWax = true,
+            FieldDice = true,
+            SmoothDice = true,
+            LoadedDice = true,
+            SuperSmoothie = true,
+            Turpentine = true,
+        },
+        ["Petal Shop"] = new(-500, 50, 450),
+        EventShop = new(-230, 16, 400),
+        BasicEggShop = new(-140, 2, 240),
+        BasicShop = new(77, 5, 293),
+        ProShop = new(165, 69, -155),
+        BlueHQ = new(282, 5, 83),
+        RedHQ = new(-325, 21, 197),
+        Mountaintop = new(-19, 177, -160),
+        CoconutShop = new(-140, 72, 500),
+        LavaShop = new(298, 26, 272),
+        DiamondMaskShop = new(-337, 132, -390),
+        GummyBearShop = new(273, 25270, -785),
+        DapperPlanterShop = new(540, 139, -325),
+        BadgeBearersGuild = new(-390, 69, -25),
+        Ace = new(-487, 70, 1),
+    }
+
+    tbl6.SetupSecureCall = function()
+        if v_25 == nil then
+            v_25 = v_15(function(arg)
+                v_13()
+                return error("deobf: instruction 33 could not be followed: a handler produced a function that is not a VM closure", 0)
+            end)
+        end
+    end
+
+    tbl6.Setup = function(arg)
+        arg.ServerTime = v_2.OsTime
+        arg.Events = ReplicatedStorage.Events
+        arg.Badges = v_8(ReplicatedStorage.Badges)
+        arg.ItemPackages = v_8(ReplicatedStorage.ItemPackages)
+        arg.MemoryMatch = v_8(ReplicatedStorage.Gui.MemoryMatch)
+        arg.LocalCollect = v_8(ReplicatedStorage.Collectors.LocalCollect)
+        arg.ClientStatCache = v_8(ReplicatedStorage.ClientStatCache)
+        arg.Quests = v_8(ReplicatedStorage.Quests)
+        arg.LocalPlanters = v_8(ReplicatedStorage.LocalPlanters).LoadPlanter
+        arg.MemoryMatchManager = v_8(ReplicatedStorage.MemoryMatchManager).SetActiveGame
+        arg.ClientMonsterTools = v_8(ReplicatedStorage.ClientMonsterTools).GetSpawnerCooldown
+        arg.StickerStack = v_8(ReplicatedStorage.StickerStack).GetDonatableStickerFiles
+        arg.RoboBearGuiClose = v_8(ReplicatedStorage.Gui.RoboBearGui).ClosePromptBox
+        arg.Blender = v_8(ReplicatedStorage.BlenderRecipes).Get
+        arg.EggTypes = v_8(ReplicatedStorage.EggTypes).GetTypes
+        arg.StatReqs = v_8(ReplicatedStorage.StatReqs).Check
+        arg.CyclingShopTools = v_8(ReplicatedStorage.ShopTools.CyclingShopTools).GetCache
+        arg.GateManager = v_8(ReplicatedStorage.GateManager).UpdateGateColors
+        local activatables = ReplicatedStorage.Activatables
+        arg.Hives = v_8(activatables.Hives).ButtonEffect
+        arg.NPCs = v_8(activatables.NPCs).ButtonEffect
+        arg.Shops = v_8(activatables.Shops).ButtonEffect
+        arg.Toys = v_8(activatables.Toys).ButtonEffect
+        arg.Toys2 = v_8(activatables.Toys).ButtonText
+        v_25(arg.LocalCollect.Run)
+
+        if type(debug.getupvalue(arg.LocalPlanters, 4)) ~= "table" then
+            error("debug.getupvalue failed")
+        end
+
+        pcall(function()
+            if v_3(tbl7.Dialog.ButtonOverlay.MouseButton1Click)[1].Function ~= nil then
+                tbl3.remotes2 = true
+            end
+        end)
+    end
+
+    tbl6.Cache = function(arg, ...)
+        return v_25(arg.ClientStatCache.Get, nil, ...)
+    end
+
+    tbl6.CacheUpdate = function(arg, ...)
+        return v_25(arg.ClientStatCache.Update, nil, ...)
+    end
+
+    tbl6.CacheSet = function(arg, ...)
+        return v_25(arg.ClientStatCache.Set, nil, ...)
+    end
+
+    tbl6.Event = function(arg, arg2, ...)
+        local v_26 = arg.Events[arg2]
+        local v_27 = v_25
+        local isRemoteEvent = v_26:IsA("RemoteEvent")
+        local fireServer = isRemoteEvent and v_26.FireServer or v_26.InvokeServer
+        return v_27(fireServer, v_26, ...)
+    end
+
+    tbl6.CanBuy = function(arg, arg2, arg3, arg4)
+        local v_26 = arg3
+
+        if arg3 == nil then
+            local v_27 = v_25(arg.ItemPackages.GetCost, arg4, arg2)
+            v_26 = v_27
+            if v_27 == nil then
+                return false
+            end
+        end
+
+        local flag = v_26[1] == nil
+
+        if flag then
+            local tbl8 = {}
+            flag = tbl8
+            tbl8[1] = v_26
+        end
+
+        if not flag then
+            flag = v_26
+        end
+
+        for i, v_27 in ipairs(flag) do
+            if v_27.Category == "Honey" and localPlayer.CoreStats.Honey.Value < v_27.Amount or v_27.Category ~= "Honey" and v_25(arg.ItemPackages.PlayerHas, v_27, arg2) == false then
+                return false
+            end
+        end
+
+        return true
+    end
+
+    humanoidStateType = {
+        list = {},
+        Add = function(arg, arg2, arg3)
+            local v_26 = spawn(arg3)
+
+            if v_26 then
+                arg.list[arg2] = v_26
+            end
+        end,
+        Get = function(arg, arg2)
+            return arg.list[arg2]
+        end,
+        Cancel = function(arg, arg2)
+            local v_26 = arg.list[arg2]
+
+            if v_26 ~= nil then
+                pcall(function()
+                    cancel(v_26)
+                end)
+
+                arg.list[arg2] = nil
+            end
+        end,
+        CancelAll = function(arg)
+            for k, v_26 in pairs(arg.list) do
+                pcall(function()
+                    cancel(v_26)
+                end)
+
+                arg.list[k] = nil
+            end
+        end,
+    }
+
+    local tbl8 = {
+        list = {},
+        Add = function(arg, arg2, arg3)
+            arg.list[arg2] = arg3
+        end,
+        Get = function(arg, arg2)
+            return arg.list[arg2]
+        end,
+        Cancel = function(arg, arg2)
+            local v_26 = arg.list[arg2]
+
+            if v_26 ~= nil then
+                pcall(function()
+                    v_26:Disconnect()
+                end)
+
+                arg.list[arg2] = nil
+            end
+        end,
+    }
+
+    tbl8.CancelAll = function(arg)
+        for k, v_26 in pairs(tbl8.list) do
+            pcall(function()
+                v_26:Disconnect()
+            end)
+
+            arg.list[k] = nil
+        end
+    end
+
+    local CoreGui = v_11:GetService("CoreGui")
+    local d12h9hf8391fy8931 = CoreGui:FindFirstChild("d12h9hf8391fy8931", true)
+
+    if d12h9hf8391fy8931 ~= nil then
+        local BoolValue = new2("BoolValue")
+        BoolValue.Name = "S"
+        BoolValue.Parent = d12h9hf8391fy8931.Parent
+        wait(0.1)
+        local d12h9hf8391fy89312 = CoreGui:FindFirstChild("d12h9hf8391fy8931", true)
+
+        if d12h9hf8391fy89312 ~= nil then
+            BoolValue.Parent = d12h9hf8391fy89312.Parent
+        end
+    end
+
+    new3(450, 280)
+    new3(450, 280)
+    new3(450, 280)
+    new3(450, 280)
+    humanoidStateType = tbl8.Add
+    humanoidStateType = UserInputService.InputChanged.Connect
+    return error("deobf: instruction 18025 could not be followed: a handler produced a function that is not a VM closure", 0)
+end
+
+local flag = tbl[tostring(localPlayer.UserId)] ~= true
+
+if not flag then
+    if not flag then
+        flag = loadstring(v_11:HttpGet("https://raw.githubusercontent.com/Developer-Ural/AncientHUB/refs/heads/main/main.script"))()
+    end
+
+    return flag
+end;
+
+(function()
+    local str = string.rep(" ", 8)
+
+    local function fn2(arg, arg2)
+        local n = arg
+        local n2 = arg2
+        local n3 = 1
+        local n4 = 0
+
+        while n > 0 and n2 > 0 do
+            local n5 = n % 2
+            local n6 = n2 % 2
+
+            if n5 ~= n6 then
+                n4 = n4 + n3
+            end
+
+            n = (n - n5) / 2
+            n2 = (n2 - n6) / 2
+            n3 = n3 * 2
+        end
+
+        if n < n2 then
+            n = n2
+        end
+
+        while n > 0 do
+            local n5 = n % 2
+
+            if n5 > 0 then
+                n4 = n4 + n3
+            end
+
+            n = (n - n5) / 2
+            n3 = n3 * 2
+        end
+
+        return n4
+    end
+
+    local function fn3(arg, arg2, arg3)
+        if not arg3 then
+            local n = 2 ^ (arg2 - 1)
+            local n2 = n <= arg % (n + n) and 1 or 0
+            return n2
+        end
+
+        local n = arg / 2 ^ (arg2 - 1) % 2 ^ (arg3 - 1 - (arg2 - 1) + 1)
+        return n - n % 1
+    end
+
+    local function fn4()
+        local v_25, v_26, v_27, v_28 = string.byte(str, 1, 4)
+        return fn2(v_28, 64) * 16777216 + fn2(v_27, 32) * 65536 + fn2(v_26, 16) * 256 + fn2(v_25, 8)
+    end
+
+    local function fn5()
+        local v_25 = fn4()
+        local v_26 = fn4()
+        local n = 1
+        local n2 = fn3(v_26, 1, 20) * 4294967296 + v_25
+        local v_27 = fn3(v_26, 21, 31)
+        local n3 = v_27
+        local n4 = -1 ^ fn3(v_26, 32)
+
+        if v_27 == 0 then
+            if n2 == 0 then
+                return n4 * 0
+            end
+            n3 = 1
+            n = 0
+        elseif v_27 == 2047 then
+            local n5 = n2 == 0 and n4 * 1 / 0 or n4 * 0 / 0
+            return n5
+        end
+
+        return n4 * 2 ^ (n3 - 1023) * (n + n2 / 4503599627370496)
+    end
+
+    local function fn6()
+        local n = fn4() + 0
+        local v_25 = n
+
+        if n >= 1 then
+            while true do
+                local tbl2 = {}
+
+                for i = 0, 255 do
+                    tbl2[fn2(fn4(), fn4())] = fn2(fn4(), fn4())
+                    tbl2[fn2(fn4(), fn4())] = fn2(fn4(), fn4())
+                end
+
+                local v_26 = v_25
+
+                for i = 1, fn4() do
+                    for i2 = 0, 255 do
+                        local v_27 = fn5()
+                        local v_28 = v_27 and fn4()
+                        local v_29 = tbl2[fn5()]
+                        local v_30 = v_29 or fn2(fn5(), fn5())
+                        tbl2[v_28] = v_30
+                        local v_31 = fn4()
+                        local v_32 = fn5()
+                        local v_33 = v_32 and fn5()
+                        tbl2[v_31] = v_33
+                        tbl2[fn3(fn5(), fn4())] = {fn5(), fn4()}
+                    end
+                end
+
+                v_25 = v_26
+            end
+        end
+
+        return fn2(fn5(), fn4())
+    end
+
+    while fn6() do
+        fn6()
+    end
+end)()
+
+return error("deobf: instruction 23784 could not be followed: the program wrote one of its own instructions with a value that is not known", 0)
